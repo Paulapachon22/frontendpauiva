@@ -1,7 +1,7 @@
 <style>
-  .inmobiliaria-nav .container-fluid a{
-  font-size: 16pt;
-}
+  .inmobiliaria-nav .container-fluid a {
+    font-size: 16pt;
+  }
 </style>
 
 
@@ -9,7 +9,8 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary inmobiliaria-nav">
     <div class="container-fluid">
       <a class="navbar-brand text-white fs-3 fw-bold" href="#">
-        <img src="logo.png" alt="logo inalpes" width="240" height="120" class="d-inline-block align-text" style="position: relative; left:70px;">
+        <img src="logo.png" alt="logo inalpes" width="240" height="120" class="d-inline-block align-text"
+          style="position: relative; left:70px;">
         Inmobiliaria inAlpes
       </a>
       <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
@@ -34,7 +35,9 @@
             <a class="nav-link active text-white fw-bold" href="#">Contacto</a>
           </li>
           <li class="nav-item">
-            <a (click)="navigateToAuthUsers()" class="btn btn-primary" style="background-color: #CAE8FF; color: black; border: none; position: relative; top: 5px; margin-left: 10px;">Iniciar Sesion</a>
+            <a (click)="navigateToAuthUsers()" class="btn btn-primary"
+              style="background-color: #CAE8FF; color: black; border: none; position: relative; top: 5px; margin-left: 10px;">Iniciar
+              Sesion</a>
           </li>
         </ul>
       </div>
@@ -44,7 +47,7 @@
 
 
 <div class="background">
-  <img src="casa-background.jpg" alt="fondo de una casa" class="background-img" width="1890" height="1080">
+  <img src="casa-background.jpg" alt="fondo de una casa" class="background-img img-fluid" width="1890" height="1080">
 </div>
 
 <div class="form-auth row">
@@ -52,15 +55,19 @@
     <div class="card" style="width: 40rem; height: 40rem;">
       <div class="card-body">
         <h1 class="fw-bold" style="color: white;">Iniciar Sesion</h1>
-        <h5 class="card-subtitle mb-2" style="padding-bottom: 30px; border-bottom: white 1px solid; color: white;">Revisa tus inmuebles publicados, los inmuebles que te interesan y mas...</h5>
+        <h5 class="card-subtitle mb-2" style="padding-bottom: 30px; border-bottom: white 1px solid; color: white;">
+          Revisa tus inmuebles publicados, los inmuebles que te interesan y mas...</h5>
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label fw-bold" style="font-size: 20pt;">Correo electronico</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo electronico...">
+            <label for="exampleInputEmail1" class="form-label fw-bold" style="font-size: 20pt;">Correo
+              electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Ingresa tu correo electronico...">
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label fw-bold" style="font-size: 20pt;">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="Ingresa tu contraseña...">
+            <input type="password" class="form-control" id="exampleInputPassword1"
+              placeholder="Ingresa tu contraseña...">
           </div>
           <a href="#" class="fw-bold">¿Olvidaste tu contraseña?</a>
           <button type="submit" class="btn btn-primary">Entrar</button>
@@ -72,23 +79,132 @@
     <div class="card" style="width: 40rem; height: 40rem;">
       <div class="card-body">
         <h1 class="card-title fw-bold" style="color: white;">Registrarse</h1>
-        <h5 class="card-subtitle mb-2" style="padding-bottom: 50px; border-bottom: white 1px solid; color: white;">Crea una cuenta para poder publicar tu inmueble</h5>
+        <h5 class="card-subtitle mb-2" style="padding-bottom: 50px; border-bottom: white 1px solid; color: white;">Crea
+          una cuenta para poder publicar tu inmueble</h5>
         <div class="btn-group d-flex justify-content-center" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+          <input type="radio" class="btn-check user-type" name="btnradio" id="btnradio1" autocomplete="off" checked (change)="selectedForm = 'personaNatural'">
           <label class="btn btn-outline-primary" for="btnradio1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
           </svg> Persona natural</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio2"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+
+          <input type="radio" class="btn-check user-type" name="btnradio" id="btnradio2" value="pymes"
+            autocomplete="off" (change)="selectedForm = 'pymes'">
+          <label class="btn btn-outline-primary" for="btnradio2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
             <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
-          </svg>Pymes</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          </svg> Pymes</label>
+
+          <input type="radio" class="btn-check user-type" name="btnradio" id="btnradio3" value="empresarial"
+            autocomplete="off" (change)="selectedForm = 'empresarial'">
           <label class="btn btn-outline-primary" for="btnradio3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-fill" viewBox="0 0 16 16">
             <path d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
-          </svg>Empresariales</label>
+          </svg> Empresariales</label>
         </div>
+
+
+        <!--Formulario persona natural-->
+        <div *ngIf="selectedForm === 'personaNatural'" class="form-section mt-4">
+          <div class="container mt-5">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputNombrePersona" class="form-label fw-bold">Nombre</label>
+                <input type="text" class="form-control" id="inputNombrePersona" placeholder="Digita tu nombre...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputApellidoPersona" class="form-label fw-bold">Apellido</label>
+                <input type="text" class="form-control" id="inputApellidoPersona" placeholder="Digita tu apellido...">
+              </div>
+              <div class="col-md-12">
+                <label for="inputEmailPersona" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmailPersona"
+                  placeholder="Digita tu correo electrónico...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPasswordPersona" class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="inputPasswordPersona"
+                  placeholder="Digita tu contraseña...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputConfirmPasswordPersona" class="form-label fw-bold">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="inputConfirmPasswordPersona"
+                  placeholder="Confirma tu contraseña...">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Formulario Pymes-->
+        <div *ngIf="selectedForm === 'pymes'" class="form-section mt-4">
+          <div class="container mt-5">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputRazonSocialPymes" class="form-label fw-bold">Razón social</label>
+                <input type="text" class="form-control" id="inputRazonSocialPymes"
+                  placeholder="Digita la razón social...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputNITPymes" class="form-label fw-bold">NIT</label>
+                <input type="text" class="form-control" id="inputNITPymes" placeholder="Digita el NIT...">
+              </div>
+              <div class="col-md-12">
+                <label for="inputEmailPymes" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmailPymes"
+                  placeholder="Digita tu correo electrónico...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPasswordPymes" class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="inputPasswordPymes"
+                  placeholder="Digita tu contraseña...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputConfirmPasswordPymes" class="form-label fw-bold">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="inputConfirmPasswordPymes"
+                  placeholder="Confirma tu contraseña...">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Empresariales Form-->
+        <div *ngIf="selectedForm === 'empresarial'" class="form-section mt-4">
+          <div class="container mt-5">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputRazonSocialEmpresarial" class="form-label fw-bold">Razón social</label>
+                <input type="text" class="form-control" id="inputRazonSocialEmpresarial"
+                  placeholder="Digita la razón social...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputNITEmpresarial" class="form-label fw-bold">NIT</label>
+                <input type="text" class="form-control" id="inputNITEmpresarial" placeholder="Digita el NIT...">
+              </div>
+              <div class="col-md-12">
+                <label for="inputEmailEmpresarial" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control" id="inputEmailEmpresarial"
+                  placeholder="Digita tu correo electrónico...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPasswordEmpresarial" class="form-label fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="inputPasswordEmpresarial"
+                  placeholder="Digita tu contraseña...">
+              </div>
+              <div class="col-md-6">
+                <label for="inputConfirmPasswordEmpresarial" class="form-label fw-bold">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="inputConfirmPasswordEmpresarial"
+                  placeholder="Confirma tu contraseña...">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

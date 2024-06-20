@@ -12,4 +12,6 @@ export class AuthusersComponent {
   navigateToAuthUsers() {
     this.router.navigate(['/authusers']);
   }
+
+  selectedForm: string = 'personaNatural';
 }
