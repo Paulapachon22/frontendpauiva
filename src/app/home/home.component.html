@@ -1,0 +1,167 @@
+<main class="main">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary inmobiliaria-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-3 fw-bold" href="#">
+            <img src="logo.png" alt="logo inalpes" width="240" height="120" class="d-inline-block align-text" style="position: relative; left:70px;">
+            Inmobiliaria inAlpes
+          </a>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white text-white fw-bold" href="#">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active text-white fw-bold" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Inmuebles
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Venta</a></li>
+                  <li><a class="dropdown-item" href="#">Arriendo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white fw-bold" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a (click)="navigateToAuthUsers()" class="btn btn-primary" style="background-color: #CAE8FF; color: black; border: none; position: relative; top: 5px; margin-left: 10px;">Iniciar Sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <div class="main-text">
+      <b>Encuentra tu hogar perfecto</b>
+    </div>
+  
+    <div class="search">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-top">
+          <b>Nuestra agencia inmobiliaria te ayudara a encontrar la
+            propiedad de tus sueños</b>
+        </div>
+        <div class="carusel-menu col-md-6">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="casa-menu.jpg" class="d-block w-100" alt="casa1">
+              </div>
+              <div class="carousel-item">
+                <img src="casa-menu2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="casa-menu3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio1">Venta</label>
+  
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Arriendo</label>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected value="1">Apartamento</option>
+              <option value="2">Casa</option>
+              <option value="3">Lote</option>
+            </select>
+            <input type="text" class="form-control" aria-label="Text input with select"
+              placeholder="Digite la zona o barrio (opcional)">
+            <button class="btn btn-outline-secondary btn-custom" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="inmuebles-destacados">
+      <b>Inmuebles destacados</b>
+    </div>
+  
+    <div class="inmuebles">
+      <div class="d-flex justify-content-center">
+        <div class="card" style="width: 18rem; margin-right: 30px;">
+          <img src="inmueble-destacada1.jpg" class="card-img-top" alt="inmueble-destacado1.jpg">
+          <div class="card-body">
+            <h5 class="card-title"><b>Casa ubicada en Usme</b></h5>
+            <div class="card-text">
+              en Arriendo
+              <br>
+              <h2><b>$500.000</b></h2>
+            </div>
+            <br>
+            <br>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-primary justify-content-end">Ver...</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-right: 30px;">
+          <img src="inmueble-destacada2.jpg" class="card-img-top" alt="inmueble-destacado2">
+          <div class="card-body">
+            <h5 class="card-title"><b>Apartamento ubicado en Ciudad Bolivar</b></h5>
+            <div class="card-text">
+              en Venta
+              <br>
+              <h2><b>$200.000</b></h2>
+            </div>
+            <br>
+            <div class="button-ver d-flex justify-content-end">
+              <a href="#" class="btn btn-primary justify-content-end">Ver...</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-right: 30px;">
+          <img src="inmueble-destacada3.jpg" class="card-img-top" alt="inmueble-destacado3">
+          <div class="card-body">
+            <h5 class="card-title"><b>Apartamento ubicado en Engativa</b></h5>
+            <div class="card-text">
+              en Arriendo
+              <br>
+              <h2><b>$700.000</b></h2>
+            </div>
+            <br>
+            <div class="d-flex justify-content-end">
+              <a href="#" class="btn btn-primary justify-content-end">Ver...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="" class="d-flex justify-content-end" style="padding-right: 300px; font-size: 20pt; color: white;">Ver todos los inmuebles...</a>
+    </div>
+  
+    <footer class="d-flex justify-content-center">
+      <img src="logo.png" alt="logo">
+      <h4 class="titulo"><b>Inmobiliaria inAlpes</b></h4>
+      <div class="linea"></div>
+      <h4 class="ingenieros"><b>Desarrollado por Ing. Paula e Ing. Iván</b></h4>
+    </footer>
+  </main>
+  

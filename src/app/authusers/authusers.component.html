@@ -1,0 +1,97 @@
+<style>
+  .inmobiliaria-nav .container-fluid a{
+  font-size: 16pt;
+}
+</style>
+
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary inmobiliaria-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fs-3 fw-bold" href="#">
+        <img src="logo.png" alt="logo inalpes" width="240" height="120" class="d-inline-block align-text" style="position: relative; left:70px;">
+        Inmobiliaria inAlpes
+      </a>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white text-white fw-bold" href="#">Servicios</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active text-white fw-bold" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Inmuebles
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Venta</a></li>
+              <li><a class="dropdown-item" href="#">Arriendo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white fw-bold" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a (click)="navigateToAuthUsers()" class="btn btn-primary" style="background-color: #CAE8FF; color: black; border: none; position: relative; top: 5px; margin-left: 10px;">Iniciar Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="background">
+  <img src="casa-background.jpg" alt="fondo de una casa" class="background-img" width="1890" height="1080">
+</div>
+
+<div class="form-auth row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card" style="width: 40rem; height: 40rem;">
+      <div class="card-body">
+        <h1 class="fw-bold" style="color: white;">Iniciar Sesion</h1>
+        <h5 class="card-subtitle mb-2" style="padding-bottom: 30px; border-bottom: white 1px solid; color: white;">Revisa tus inmuebles publicados, los inmuebles que te interesan y mas...</h5>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label fw-bold" style="font-size: 20pt;">Correo electronico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo electronico...">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label fw-bold" style="font-size: 20pt;">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1"  placeholder="Ingresa tu contraseña...">
+          </div>
+          <a href="#" class="fw-bold">¿Olvidaste tu contraseña?</a>
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card" style="width: 40rem; height: 40rem;">
+      <div class="card-body">
+        <h1 class="card-title fw-bold" style="color: white;">Registrarse</h1>
+        <h5 class="card-subtitle mb-2" style="padding-bottom: 50px; border-bottom: white 1px solid; color: white;">Crea una cuenta para poder publicar tu inmueble</h5>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="d-flex justify-content-center">
+  <img src="logo.png" alt="logo">
+  <h4 class="titulo"><b>Inmobiliaria inAlpes</b></h4>
+  <div class="linea"></div>
+  <h4 class="ingenieros"><b>Desarrollado por Ing. Paula e Ing. Iván</b></h4>
+</footer>
