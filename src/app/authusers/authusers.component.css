@@ -18,7 +18,6 @@
 }
 
 .form-auth{
-
     position: absolute;
     bottom: 50px;
     left: 300px;
@@ -42,6 +41,11 @@
 
 .form-auth a{
     color: white;
+}
+
+.form-auth .btn-group input[type="radio"]:checked {
+    background-color: black;
+    border-color: black;
 }
 
 .form-auth button{

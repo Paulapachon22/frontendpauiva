@@ -12,4 +12,7 @@ export class HomeComponent {
   navigateToAuthUsers() {
     this.router.navigate(['/authusers']);
   }
+  irAInmueblesVentas(){
+    this.router.navigate(['/inmueblesventas']);
+  }
 }
