@@ -1,3 +1,4 @@
+/*Copiar desde aqui*/
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -13,6 +14,7 @@
     font-size: 16pt;
 }
 
+/*Hasta aqui*/
 .main-text{
    background: linear-gradient(to right, #004AAD,#CB6CE6);
    color: white;
@@ -118,7 +120,7 @@
     margin-right: 0;
 }
 
-
+/*Copiar desde aqui para pie de pagina*/
 footer{
     background: linear-gradient(to right, #004AAD,#CB6CE6);
     color: white;
@@ -147,3 +149,4 @@ footer .ingenieros{
     margin-left: 40px;
     color:#CAE8FF;
 }
+/* Hasta aca */
