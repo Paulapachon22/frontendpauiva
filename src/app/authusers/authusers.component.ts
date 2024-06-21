@@ -12,6 +12,8 @@ export class AuthusersComponent {
   navigateToAuthUsers() {
     this.router.navigate(['/authusers']);
   }
-
+  irAInmueblesVentas(){
+    this.router.navigate(['/inmueblesventas']);
+  }
   selectedForm: string = 'personaNatural';
 }
