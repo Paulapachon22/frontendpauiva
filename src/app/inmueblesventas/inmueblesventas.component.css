@@ -1,17 +1,18 @@
-*{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+{
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 }
 .inmobiliaria-nav{
-    font-size: 16pt;
-    background-color: #050A30 !important;
+font-size: 16pt;
+background-color: #050A30 !important;
 }
 
 .inmobiliaria-nav .container-fluid a{
-    font-size: 16pt;
+font-size: 16pt;
 }
+
 
 body {
     background: linear-gradient(to right, #c31432, #240b36);
@@ -100,14 +101,7 @@ body {
   .ver-mas:hover {
     background-color: #286090;
   }
-
-
-
-
-
-
-
-
+  
 footer{
     background: linear-gradient(to right, #004AAD,#CB6CE6);
     color: white;
