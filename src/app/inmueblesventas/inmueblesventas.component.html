@@ -1,1 +1,122 @@
-<p>pato</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmuebles en venta</title>
+    <link rel="stylesheet" href="inmueblesventas.component.css">
+    
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary inmobiliaria-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fs-3 fw-bold" href="#">
+          <img src="logo.png" alt="logo inalpes" width="240" height="120" class="d-inline-block align-text" style="position: relative; left:70px;">
+          Inmobiliaria inAlpes
+        </a>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white text-white fw-bold" href="#">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active text-white fw-bold" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Inmuebles
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" (click)="irAInmueblesVentas()">Venta</a></li>
+                <li><a class="dropdown-item" >Arriendo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white fw-bold" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a (click)="navigateToAuthUsers()" class="btn btn-primary" style="background-color: #CAE8FF; color: black; border: none; position: relative; top: 5px; margin-left: 10px;">Iniciar Sesion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <h1>Inmuebles en venta</h1>
+    <div class="container">
+        <div class="card">
+            <img src="apartamentonorte.JPG" alt="Apartmento en el Norte">
+            <h3>Apartamento en el Norte</h3>
+            <p>En venta</p>
+            <p>$300.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="casa-cedritos.JPG" alt="Bogotá/Cedritos">
+            <h3>Bogotá/ Cedritos</h3>
+            <p>En venta</p>
+            <p>$450.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Calle 100">
+            <h3>Bogotá/Calle 100</h3>
+            <p>En venta</p>
+            <p>$1.100.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Engativa">
+            <h3>Bogotá/Engativa</h3>
+            <p>En venta</p>
+            <p>$2.100.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Kennedy">
+            <h3>Bogotá/Kennedy</h3>
+            <p>En venta</p>
+            <p>$100.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Colina Campestre">
+            <h3>Bogotá/Colina Campestre</h3>
+            <p>En venta</p>
+            <p>$500.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Barrios Unidos">
+            <h3>Bogotá/Barrios Unidos</h3>
+            <p>En venta</p>
+            <p>$240.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Bosa">
+            <h3>Bogotá/Bosa</h3>
+            <p>En venta</p>
+            <p>$150.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Castilla">
+            <h3>Bogotá/Castilla</h3>
+            <p>En venta</p>
+            <p>$150.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/200x150" alt="Bogotá/Villa Amalia">
+            <h3>Bogotá/Villa Amalia</h3>
+            <p>En venta</p>
+            <p>$300.000.000</p>
+            <a href="#">VER...</a>
+        </div>
+    </div>
+    <a href="#" style="color: white; text-decoration: none;">VER MAS...</a>
+</body>
+</html>
